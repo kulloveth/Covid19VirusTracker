@@ -16,4 +16,11 @@ An android app to keep track of covid 19 case statistics, News and show preventi
 
 ## ScreenShots 
 
-
+<table>
+    <tr>
+      <td>
+        
+  ![Slide](https://github.com/kulloveth/Covid19VirusTracker/blob/master/app/screenshots/new-coro.gif)
+  </td>
+  </tr>
+</table>
