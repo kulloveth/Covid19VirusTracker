@@ -70,15 +70,6 @@ class OnboardingFragment : Fragment() {
                 )
             }
         }
-
-        textSkipIntro.setOnClickListener {
-            startActivity(Intent(requireActivity(), MainActivity::class.java))
-            requireActivity().finish()
-            requireActivity().overridePendingTransition(
-                R.anim.slide_in_right,
-                R.anim.slide_out_left
-            )
-        }
     }
 
 
@@ -123,29 +114,28 @@ class OnboardingFragment : Fragment() {
             if (i == index) {
                 imageView.setImageDrawable(
                     ContextCompat.getDrawable(
-                        requireContext(),
-                        R.drawable.indicator_active
+                        requireActivity(), R.drawable.indicator_active
                     )
                 )
             } else {
                 imageView.setImageDrawable(
                     ContextCompat.getDrawable(
-                        requireContext(),
+                        requireActivity(),
                         R.drawable.indicator_inactive
                     )
                 )
-
             }
 
         }
-        if (index == introSideAdapter.itemCount - 1) {
-            buttonNext.text = "Finish"
-            textSkipIntro.visibility = View.INVISIBLE
-        } else {
-            buttonNext.text = "Next"
-            textSkipIntro.visibility = View.VISIBLE
-        }
 
+        if (index == introSideAdapter.itemCount - 1) {
+            val animation = AnimationUtils.loadAnimation(requireActivity(), R.anim.app_name_animation)
+            buttonNext.animation = animation
+            buttonNext.visibility = View.VISIBLE
+
+        } else {
+            buttonNext.visibility = View.INVISIBLE
+        }
 
     }
 

@@ -8,30 +8,17 @@
     tools:context=".ui.intro.OnboardingFragment">
 
 
-    <TextView
-        android:id="@+id/textSkipIntro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_50dp"
-        android:text="@string/skip"
-        android:textAllCaps="true"
-        android:textSize="@dimen/title_size"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/standard_padding"
-        android:text="@string/next"
+        android:text="@string/finish"
         android:textColor="@android:color/white"
         android:textSize="@dimen/title_size"
         android:textStyle="bold"
         app:backgroundTint="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/textSkipIntro"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
