@@ -13,7 +13,7 @@
         android:layout_height="@dimen/lottie_image_size"
         app:lottie_loop="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:lottie_rawRes="@raw/covid_icon"
+        app:lottie_fileName="covid_icon.json"
         app:lottie_autoPlay="true"/>
     <TextView
         android:layout_width="match_parent"

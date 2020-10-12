@@ -23,6 +23,7 @@ class InfoSideAdapter(private val infoSliders: List<InfoSlide>,private val passT
             textTitle.text = infoSlide.titleResource
             desc.text = infoSlide.detail
             imageIcon.setAnimation(infoSlide.logoResource)
+            imageIcon.imageAssetsFolder = "images";
             passText.onTextPass(desc)
         }
 

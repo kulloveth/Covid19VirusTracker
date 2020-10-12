@@ -29,15 +29,14 @@ class OnboardingFragment : Fragment() {
         listOf(
             IntroSlide(
                 "Keep Your Hands Clean",
-                R.raw.wash_hands
+                "wash_hands.json"
             ),
             IntroSlide(
-                "Protect your face",
-                R.raw.wear_mask
+                "Protect your face", "wear_mask.json"
             ),
             IntroSlide(
                 "Stay at Home",
-                R.raw.stay_home)))
+                "stay_home.json")))
 
 
 

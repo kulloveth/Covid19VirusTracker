@@ -17,6 +17,7 @@ class IntroSideAdapter(private val introSliders: List<IntroSlide>) :
 
         fun bind(introSlide: IntroSlide) {
             textTitle.text = introSlide.titleResource
+            imageIcon.imageAssetsFolder = "images";
             imageIcon.setAnimation(introSlide.logoResource)
         }
 

@@ -52,7 +52,7 @@ class DetailsFragment : BaseFragment() {
     }
 
     fun setUpDetails() {
-        viewModel?.sstatusLiveData?.observe(requireActivity(), Observer {
+        viewModel.sstatusLiveData.observe(requireActivity(), Observer {
             entries.clear()
             entries.apply {
                 it?.let {

@@ -57,29 +57,29 @@ class InfoActivity : AppCompatActivity(),InfoSideAdapter.PassText {
         listOf(
             InfoSlide(
                 "Keep Your Hands Clean",
-                "Clean your hands often. Use soap and water, or an alcohol-based hand rub.\n",
-                R.raw.wash_hands
+                "Clean your hands often. Use soap and water, or an alcohol-based hand rub.",
+                "wash_hands.json"
             ),
             InfoSlide(
                 "Protect your face",
                 "Wear a mask when physical distancing is not possible.",
-                R.raw.wear_mask
+                "wear_mask.json"
             ),
             InfoSlide(
                 "Stay at Home",
                 "Stay home if you feel unwell.",
-                R.raw.stay_home
+                "stay_home.json"
             ),
 
             InfoSlide(
                 "Social Distancing",
                 "Maintain a safe distance from anyone who is coughing or sneezing.",
-                R.raw.distance
+                "distance.json"
             ),
             InfoSlide(
                 "Seek Medical Attention",
                 "If you have a fever, cough and difficulty breathing, seek medical attention.",
-                R.raw.medical
+                "medical.json"
             )
         )
 
